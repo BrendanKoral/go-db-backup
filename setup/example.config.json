@@ -1,0 +1,12 @@
+{
+  "databases": {
+    "bkio": {
+      "username": "",
+      "password": "",
+      "dbname": "",
+      "dbaddress": "",
+      "dbport": "",
+      "dumpdir": ""
+    }
+  }
+}
