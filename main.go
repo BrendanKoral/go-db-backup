@@ -26,15 +26,8 @@ func main() {
 		close(ch)
 	}()
 
-	for {
-		result, ok := <-ch
-
-		if !ok {
-			log.Println("All DBs backup processes complete")
-			break
-		}
-
-		log.Println("Output: ", result)
+	for val := range ch {
+		log.Println("Output: ", val)
 	}
 }
 
